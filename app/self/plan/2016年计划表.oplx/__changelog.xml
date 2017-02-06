@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="tanlifei" date="2016-11-02T09:45:43.679Z" timestamp="2016-11-02T09:45:43.679Z">
+    <change idref="t84" attribute="title" type="string" from="学习IOS第8课" to="学习IOS第8课，"/>
+  </task-change-set>
+  <task-change-set user="tanlifei" date="2016-12-19T00:38:48.692Z" timestamp="2016-12-19T00:38:48.692Z">
+    <change idref="t168" from="t160" from-position="1">
+      <change idref="t168" attribute="noEarlierThanConstraintDate" type="date" to="2016-12-12T00:00:00.000Z"/>
+      <change idref="t168" attribute="title" type="string" to="24号去香港玩一次"/>
+    </change>
+  </task-change-set>
+  <metadata-change-set user="tanlifei" date="2016-11-21T05:10:58.292Z" timestamp="2016-11-21T05:10:58.292Z">
+    <change idref="m1" attribute="baseStyle" type="dict" to="{
+    &quot;gantt-time-off-color&quot; =     {
+        space = gg22;
+        w = 0;
+    };
+}"/>
+  </metadata-change-set>
+</changelog>

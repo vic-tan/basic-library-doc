@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="fTKizRDw1hr">
+  <start-date>2016-10-25T00:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>任务 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>里程碑 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>群组 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>资源 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>设备 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>素材 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>群组 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>资源 1</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t25"/>
+    <child-task idref="t24"/>
+    <child-task idref="t1"/>
+    <child-task idref="t52"/>
+    <child-task idref="t18"/>
+  </task>
+  <task id="t1">
+    <title>月计划</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-21T07:15:00.000Z</start-constraint-date>
+    <child-task idref="t160"/>
+    <child-task idref="t48"/>
+    <child-task idref="t23"/>
+    <start-no-earlier-than>2016-10-21T07:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t2">
+    <title>生活方面</title>
+    <type>group</type>
+    <child-task idref="t4"/>
+    <child-task idref="t5"/>
+    <child-task idref="t11"/>
+    <child-task idref="t6"/>
+  </task>
+  <task id="t3">
+    <title>工作方面</title>
+    <type>group</type>
+    <child-task idref="t8"/>
+    <child-task idref="t9"/>
+    <child-task idref="t10"/>
+  </task>
+  <task id="t4">
+    <title>在惠州买一个房子（20万首付）</title>
+    <effort>1296000</effort>
+    <effort-done>1296000</effort-done>
+  </task>
+  <task id="t5">
+    <title>结婚</title>
+    <effort>0</effort>
+    <effort-done>1</effort-done>
+  </task>
+  <task id="t6">
+    <title>每个月存5000，一年存6万</title>
+    <effort>0</effort>
+    <effort-done>0.399999976158142</effort-done>
+  </task>
+  <task id="t8">
+    <title>学会IOS</title>
+    <effort>0</effort>
+    <effort-done>0.149999991059303</effort-done>
+  </task>
+  <task id="t9">
+    <title>学会android studio</title>
+    <effort>0</effort>
+    <effort-done>0.799999952316284</effort-done>
+  </task>
+  <task id="t10">
+    <title>android 写个开源，用于接外包</title>
+    <effort>0</effort>
+    <effort-done>0.799999952316284</effort-done>
+    <start-constraint-date>2016-10-25T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-25T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t11">
+    <title>考驾照</title>
+    <effort>2592000</effort>
+    <effort-done>648000</effort-done>
+  </task>
+  <task id="t18">
+    <title>年计划</title>
+    <type>group</type>
+    <start-constraint-date>2015-12-31T16:00:00.000Z</start-constraint-date>
+    <end-constraint-date>2016-12-30T16:00:00.000Z</end-constraint-date>
+    <child-task idref="t2"/>
+    <child-task idref="t3"/>
+    <start-no-earlier-than>2015-12-31T16:00:00.000Z</start-no-earlier-than>
+    <end-no-later-than>2016-12-30T16:00:00.000Z</end-no-later-than>
+  </task>
+  <task id="t23">
+    <title>10月 </title>
+    <type>group</type>
+    <child-task idref="t40"/>
+  </task>
+  <task id="t24">
+    <title>周计划</title>
+    <type>group</type>
+    <child-task idref="t157"/>
+    <child-task idref="t59"/>
+    <child-task idref="t36"/>
+  </task>
+  <task id="t25">
+    <title>天计划</title>
+    <type>group</type>
+    <child-task idref="t163"/>
+    <child-task idref="t74"/>
+    <child-task idref="t38"/>
+  </task>
+  <task id="t26">
+    <title>第4周</title>
+    <type>group</type>
+    <child-task idref="t28"/>
+  </task>
+  <task id="t28">
+    <title>学习IOS1-5 day 课程复习学习</title>
+    <effort>144000</effort>
+  </task>
+  <task id="t31">
+    <title>26号</title>
+    <type>group</type>
+    <child-task idref="t32"/>
+    <child-task idref="t33"/>
+  </task>
+  <task id="t32">
+    <title>课程收藏，及专题，搜索界面</title>
+    <effort>28800</effort>
+    <effort-done>25920</effort-done>
+  </task>
+  <task id="t33">
+    <title>IOS 第一天，第2天</title>
+    <effort>28800</effort>
+    <effort-done>12960</effort-done>
+  </task>
+  <task id="t36">
+    <title>10月</title>
+    <type>group</type>
+    <child-task idref="t26"/>
+  </task>
+  <task id="t38">
+    <title>10月</title>
+    <type>group</type>
+    <child-task idref="t69"/>
+    <child-task idref="t55"/>
+    <child-task idref="t45"/>
+    <child-task idref="t41"/>
+    <child-task idref="t31"/>
+  </task>
+  <task id="t40">
+    <title>复习IOS 1-5天的课程，这是之前学过的，下个月开始接着学每6天的课程</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t41">
+    <title>27号</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-26T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t43"/>
+    <child-task idref="t44"/>
+    <start-no-earlier-than>2016-10-26T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t43">
+    <title>首页推荐，搜索</title>
+    <effort>28800</effort>
+    <effort-done>14400</effort-done>
+    <start-constraint-date>2016-10-26T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-26T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t44">
+    <title>IOS第三天</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-10-26T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-26T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t45">
+    <title>28号</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-27T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t47"/>
+    <child-task idref="t46"/>
+    <start-no-earlier-than>2016-10-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t46">
+    <title>IOS 第4天</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-10-27T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t47">
+    <title>搜索</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-10-27T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t48">
+    <title>11月</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-27T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t95"/>
+    <child-task idref="t73"/>
+    <child-task idref="t49"/>
+    <child-task idref="t64"/>
+    <child-task idref="t65"/>
+    <start-no-earlier-than>2016-10-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t49">
+    <title>IOS学习到学到15天教程</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-10-27T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t52">
+    <title>季计划</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-27T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t53"/>
+    <start-no-earlier-than>2016-10-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t53">
+    <title>第4季</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-27T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t54"/>
+    <start-no-earlier-than>2016-10-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t54">
+    <title>IOS 学到 30天</title>
+    <effort>28800</effort>
+    <effort-done>14400</effort-done>
+    <start-constraint-date>2016-10-27T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t55">
+    <title>29,30号（双休）</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-28T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t56"/>
+    <child-task idref="t57"/>
+    <child-task idref="t58"/>
+    <start-no-earlier-than>2016-10-28T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t56">
+    <title>IOS第5天学习，看完第五天可开始学习第6天</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-10-28T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-28T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t57">
+    <title>打一次篮球</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-10-28T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-28T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t58">
+    <title>看喜糖</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-10-28T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-28T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t59">
+    <title>11月</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-28T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t136"/>
+    <child-task idref="t122"/>
+    <child-task idref="t94"/>
+    <child-task idref="t66"/>
+    <start-no-earlier-than>2016-10-28T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t64">
+    <title>培伴项目完成</title>
+    <effort>28800</effort>
+    <effort-done>23039.998046875</effort-done>
+    <start-constraint-date>2016-10-28T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-28T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t65">
+    <title>andriod 框架优化</title>
+    <effort>28800</effort>
+    <effort-done>23039.998046875</effort-done>
+    <start-constraint-date>2016-10-28T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-28T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t66">
+    <title>第1周</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-28T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t67"/>
+    <child-task idref="t68"/>
+    <start-no-earlier-than>2016-10-28T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t67">
+    <title>IOS学到第9天</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-10-28T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-28T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t68">
+    <title>培伴搜索，收藏，界面调完</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-10-28T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-28T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t69">
+    <title>31号</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-31T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t71"/>
+    <child-task idref="t72"/>
+    <start-no-earlier-than>2016-10-31T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t71">
+    <title>学习IOS第6课1-10节视频</title>
+    <effort>28800</effort>
+    <effort-done>14400</effort-done>
+    <start-constraint-date>2016-10-31T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-31T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t72">
+    <title>培伴收藏做完</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-10-31T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-31T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t73">
+    <title>驾照科目二，练车预约4次以上</title>
+    <effort>28800</effort>
+    <effort-done>7200</effort-done>
+    <start-constraint-date>2016-10-31T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-31T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t74">
+    <title>11月</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-31T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t148"/>
+    <child-task idref="t154"/>
+    <child-task idref="t153"/>
+    <child-task idref="t152"/>
+    <child-task idref="t151"/>
+    <child-task idref="t133"/>
+    <child-task idref="t131"/>
+    <child-task idref="t129"/>
+    <child-task idref="t126"/>
+    <child-task idref="t120"/>
+    <child-task idref="t118"/>
+    <child-task idref="t111"/>
+    <child-task idref="t108"/>
+    <child-task idref="t105"/>
+    <child-task idref="t102"/>
+    <child-task idref="t99"/>
+    <child-task idref="t91"/>
+    <child-task idref="t90"/>
+    <child-task idref="t86"/>
+    <child-task idref="t83"/>
+    <child-task idref="t80"/>
+    <child-task idref="t76"/>
+    <start-no-earlier-than>2016-10-31T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t76">
+    <title>1号</title>
+    <type>group</type>
+    <start-constraint-date>2016-10-31T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t77"/>
+    <child-task idref="t79"/>
+    <child-task idref="t78"/>
+    <start-no-earlier-than>2016-10-31T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t77">
+    <title>学习IOS第6课10-17节视频</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-10-31T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-31T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t78">
+    <title>调整培伴界面人优化</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-10-31T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-31T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t79">
+    <title>学习IOS第7课1-5节视频</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-10-31T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-10-31T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t80">
+    <title>2号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-02T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t82"/>
+    <child-task idref="t81"/>
+    <start-no-earlier-than>2016-11-02T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t81">
+    <title>调整培伴界面人优化</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-02T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-02T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t82">
+    <title>学完IOS第7课视频</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-02T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-02T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t83">
+    <title>3号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-02T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t84"/>
+    <child-task idref="t85"/>
+    <start-no-earlier-than>2016-11-02T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t84">
+    <title>学习IOS第8课，</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-02T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-02T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t85">
+    <title>培伴我的活动收藏，及活动收藏，搜索自动补全</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-02T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-02T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t86">
+    <title>4号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-04T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t89"/>
+    <child-task idref="t88"/>
+    <start-no-earlier-than>2016-11-04T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t88">
+    <title>学习IOS第8课</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-02T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-02T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t89">
+    <title>恩源项目修改</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-04T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-04T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t90">
+    <title>5号（周六）</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-07T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t92"/>
+    <start-no-earlier-than>2016-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t91">
+    <title>6号（周日）</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-07T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t93"/>
+    <start-no-earlier-than>2016-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t92">
+    <title>学练车</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-07T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t93">
+    <title>去福田拿婚纱照</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-07T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t94">
+    <title>第2周</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-07T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t116"/>
+    <child-task idref="t115"/>
+    <child-task idref="t96"/>
+    <child-task idref="t97"/>
+    <start-no-earlier-than>2016-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t95">
+    <title>拿婚纱照底片及精修图，11号领结婚证</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-07T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t96">
+    <title>IOS学到第12天</title>
+    <effort>28800</effort>
+    <effort-done>14400</effort-done>
+    <start-constraint-date>2016-11-07T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t97">
+    <title>培伴搜索，活动收藏，界面调完</title>
+    <effort>28800</effort>
+    <effort-done>23039.998046875</effort-done>
+    <start-constraint-date>2016-11-07T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t99">
+    <title>7号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-07T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t101"/>
+    <child-task idref="t100"/>
+    <start-no-earlier-than>2016-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t100">
+    <title>学习IOS第9，10课</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-07T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t101">
+    <title>活动收藏业务逻辑写完</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-07T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t102">
+    <title>8号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t104"/>
+    <child-task idref="t103"/>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t103">
+    <title>学习IOS第9，10课</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t104">
+    <title>活动收藏业务逻辑写完</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t105">
+    <title>9号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t106"/>
+    <child-task idref="t107"/>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t106">
+    <title>活动收藏业务逻辑写完</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t107">
+    <title>学习IOS第9，10课</title>
+    <effort>28800</effort>
+    <effort-done>23039.998046875</effort-done>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t108">
+    <title>10号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t110"/>
+    <child-task idref="t109"/>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t109">
+    <title>学习IOS第10，11课</title>
+    <effort>28800</effort>
+    <effort-done>11519.9990234375</effort-done>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t110">
+    <title>请11号的假</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t111">
+    <title>11号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t117"/>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t115">
+    <title>公司周六组织一次活动</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t116">
+    <title>练车一次，跑步一次，篮球一次</title>
+    <effort>28800</effort>
+    <effort-done>23039.998046875</effort-done>
+    <start-constraint-date>2016-11-09T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t117">
+    <title>去龙川领证并且办港澳能行证</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-10T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-10T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t118">
+    <title>12号（周六）</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-10T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t119"/>
+    <start-no-earlier-than>2016-11-10T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t119">
+    <title>公司组织活动1天</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-10T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-10T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t120">
+    <title>13号（周日）</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-10T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t121"/>
+    <start-no-earlier-than>2016-11-10T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t121">
+    <title>早上去买喜糖</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-10T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-10T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t122">
+    <title>第3周</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-14T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t125"/>
+    <child-task idref="t123"/>
+    <child-task idref="t124"/>
+    <start-no-earlier-than>2016-11-14T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t123">
+    <title>IOS学到13课</title>
+    <effort>28800</effort>
+    <effort-done>20160</effort-done>
+    <start-constraint-date>2016-11-14T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-14T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t124">
+    <title>练车一次，跑步一次，篮球一次</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-14T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-14T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t125">
+    <title>培伴完成</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-14T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-14T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t126">
+    <title>14号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-14T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t127"/>
+    <child-task idref="t128"/>
+    <start-no-earlier-than>2016-11-14T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t127">
+    <title>分享喜糖给同事</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-14T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-14T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t128">
+    <title>IOS课程11课</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-14T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-14T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t129">
+    <title>16号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-16T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t130"/>
+    <start-no-earlier-than>2016-11-16T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t130">
+    <title>IOS课程11课</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-16T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-16T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t131">
+    <title>17号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-16T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t132"/>
+    <start-no-earlier-than>2016-11-16T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t132">
+    <title>IOS课程12课</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-16T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-16T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t133">
+    <title>18号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-17T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t135"/>
+    <start-no-earlier-than>2016-11-17T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t135">
+    <title>IOS课程13课</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-16T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-16T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t136">
+    <title>第4周</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-21T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t156"/>
+    <child-task idref="t137"/>
+    <start-no-earlier-than>2016-11-21T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t137">
+    <title>培伴代码开发完成及测试</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-21T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-21T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t148">
+    <title>23号</title>
+    <type>group</type>
+    <start-constraint-date>2016-11-23T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t150"/>
+    <start-no-earlier-than>2016-11-23T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t150">
+    <title>IOS课程14课</title>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2016-11-16T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-16T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t151">
+    <title>19号（同六）</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-23T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-23T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t152">
+    <title>20号（周日）</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-23T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-23T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t153">
+    <title>21号</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-23T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t74"/>
+    <start-no-earlier-than>2016-11-23T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t154">
+    <title>22号</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-11-23T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t74"/>
+    <start-no-earlier-than>2016-11-23T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t156">
+    <title>IOS学到15课</title>
+    <effort>28800</effort>
+    <effort-done>20160</effort-done>
+    <start-constraint-date>2016-11-14T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-11-14T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t157">
+    <title>12月</title>
+    <type>group</type>
+    <start-constraint-date>2016-12-05T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t158"/>
+    <start-no-earlier-than>2016-12-05T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t158">
+    <title>第1周</title>
+    <type>group</type>
+    <start-constraint-date>2016-12-05T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t167"/>
+    <child-task idref="t159"/>
+    <start-no-earlier-than>2016-12-05T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t159">
+    <title>IOS学完19课</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-12-05T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-12-05T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t160">
+    <title>12月</title>
+    <type>group</type>
+    <start-constraint-date>2016-12-05T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t169"/>
+    <child-task idref="t161"/>
+    <child-task idref="t162"/>
+    <start-no-earlier-than>2016-12-05T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t161">
+    <title>请深圳朋友吃喜酒</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-12-05T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-12-05T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t162">
+    <title>IOS学到25课</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-12-05T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-12-05T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t163">
+    <title>12月</title>
+    <type>group</type>
+    <start-constraint-date>2016-12-05T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t164"/>
+    <start-no-earlier-than>2016-12-05T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t164">
+    <title>5号</title>
+    <type>group</type>
+    <start-constraint-date>2016-12-05T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t166"/>
+    <start-no-earlier-than>2016-12-05T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t166">
+    <title>IOS课学完</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-12-05T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-12-05T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t167">
+    <title>预约练车</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-12-05T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-12-05T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t169">
+    <title>写年终总结</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-12-12T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2016-12-12T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
