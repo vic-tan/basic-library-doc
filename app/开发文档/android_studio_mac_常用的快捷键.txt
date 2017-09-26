@@ -21,7 +21,8 @@ command + N                              -------> 生成get ,set ,Override方法
 conterol + J                             -------> 显示该方法或类的api
 conterol + T                             -------> 调出Refactor选项框，可以抽取方法、成员变量等
 command + ALT + V                        -------> 相当于Eclipse的Ctrl + 2 ,L  自动生成变量
-command + ALT + F                        -------> 抽取成成员变量
+command + ALT + F                        -------> 抽取全局变量
+command + ALT + v                        -------> 抽取成成员变量
 conterol + CMD + F                       -------> 全屏切换，期间导致过一次工具栏消失
 command + shift + U	                     -------> 大小写转化
 shift + F4	                             -------> 全屏打开编辑文件

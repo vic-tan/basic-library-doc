@@ -122,6 +122,7 @@
   <task id="t4">
     <title>拿到驾驶证</title>
     <effort>1296000</effort>
+    <effort-done>1296000</effort-done>
   </task>
   <task id="t5">
     <title>换一份税后15K工作</title>
@@ -222,6 +223,7 @@
   <task id="t46">
     <title>2万的负债还清，及外债全部收回</title>
     <effort>28800</effort>
+    <effort-done>14400</effort-done>
   </task>
   <task id="t47">
     <title>Swift(3个月完成，学完IOS后开始，大概3月开始)</title>
@@ -238,6 +240,7 @@
     <title>第1季</title>
     <type>group</type>
     <start-constraint-date>2016-10-27T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t104"/>
     <child-task idref="t71"/>
     <child-task idref="t70"/>
     <child-task idref="t69"/>
@@ -262,7 +265,7 @@
     <title>学习方面</title>
     <type>group</type>
     <start-constraint-date>2016-10-31T00:00:00.000Z</start-constraint-date>
-    <child-task idref="t67"/>
+    <child-task idref="t103"/>
     <child-task idref="t8"/>
     <child-task idref="t10"/>
     <child-task idref="t47"/>
@@ -328,12 +331,6 @@
     <effort>28800</effort>
     <start-constraint-date>2016-12-23T00:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2016-12-23T00:00:00.000Z</start-no-earlier-than>
-  </task>
-  <task id="t67">
-    <title>webApp的学习（年底完成）</title>
-    <effort>28800</effort>
-    <start-constraint-date>2016-12-29T00:00:00.000Z</start-constraint-date>
-    <start-no-earlier-than>2016-12-29T00:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t69">
     <title>更新一份简历</title>
@@ -426,6 +423,7 @@
     <title>2月</title>
     <type>group</type>
     <start-constraint-date>2017-02-06T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t105"/>
     <child-task idref="t88"/>
     <child-task idref="t87"/>
     <child-task idref="t86"/>
@@ -501,6 +499,7 @@
     <title>2月</title>
     <type>group</type>
     <start-constraint-date>2017-02-06T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t99"/>
     <child-task idref="t95"/>
     <start-no-earlier-than>2017-02-06T00:00:00.000Z</start-no-earlier-than>
   </task>
@@ -530,6 +529,44 @@
     <effort>28800</effort>
     <start-constraint-date>2017-02-06T00:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2017-02-06T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t99">
+    <title>8号</title>
+    <type>group</type>
+    <start-constraint-date>2017-02-08T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t102"/>
+    <child-task idref="t100"/>
+    <start-no-earlier-than>2017-02-08T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t100">
+    <title>IOS学习33课（中午休息，下午）</title>
+    <effort>28800</effort>
+    <start-constraint-date>2017-02-08T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-02-08T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t102">
+    <title>RxJava学习（下午2个小时，没事的时候3个小时）</title>
+    <effort>28800</effort>
+    <start-constraint-date>2017-02-06T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-02-06T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t103">
+    <title>React-Native( 学会3个月)</title>
+    <effort>28800</effort>
+    <start-constraint-date>2017-02-11T16:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-02-11T16:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t104">
+    <title>HTML5学习</title>
+    <effort>28800</effort>
+    <start-constraint-date>2017-02-11T16:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-02-11T16:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t105">
+    <title>HTML5学习</title>
+    <effort>28800</effort>
+    <start-constraint-date>2017-02-11T16:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-02-11T16:00:00.000Z</start-no-earlier-than>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opnx="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="533" y="155" w="702" h="616">
+  <window x="244" y="203" w="702" h="616">
     <editing-scenario>fTKizRDw1hr</editing-scenario>
     <view>task</view>
     <change-tracking/>
     <status-display>basic</status-display>
     <task-view>
       <split-view-divider-position>700</split-view-divider-position>
-      <outline x="0" y="0" w="700" h="517">
+      <outline x="0" y="0" w="700" h="532">
         <column name="Title" width="627"/>
         <column name="%Done" width="70"/>
-        <expanded-items idrefs="t24 t83 t61 t50 t49 t55 t53 t89 t90 t25 t1 t95 t2 t57 t3 t94"/>
-        <selected-items-at-filter-time idrefs="t80 t73 t31 t24 t66 t59 t74 t81 t18 t25 t67 t75 t26 t82 t69 t90 t76 t83 t41 t84 t42 t77 t91 t28 t2 t78 t92 t36 t85 t3 t50 t43 t4 t93 t86 t51 t79 t5 t44 t94 t38 t87 t10 t45 t95 t53 t8 t60 t88 t46 t89 t47 t96 t61 t97 t55 t62 t98 t63 t49 t70 t64 t71 t57 t72 t58 t23"/>
+        <expanded-items idrefs="t95 t53 t2 t55 t61 t90 t18 t99 t89 t50"/>
+        <selected-items-at-filter-time idrefs="t73 t31 t59 t66 t80 t24 t81 t25 t18 t74 t82 t75 t26 t103 t69 t76 t41 t90 t83 t77 t84 t91 t104 t28 t42 t2 t85 t92 t43 t50 t36 t3 t78 t105 t79 t51 t44 t86 t4 t5 t93 t94 t38 t45 t87 t10 t88 t46 t53 t60 t95 t8 t89 t61 t96 t47 t97 t62 t55 t100 t98 t70 t63 t49 t99 t64 t57 t71 t72 t23 t58"/>
       </outline>
       <gantt-view x="0" y="0" w="0" h="0">
         <view-mode>actual</view-mode>
@@ -133,7 +133,7 @@ End:</group-table-style>
     </network-view>
   </window>
   <project>
-    <next-task-id>99</next-task-id>
+    <next-task-id>106</next-task-id>
     <next-resource-id>2</next-resource-id>
     <scenario id="fTKizRDw1hr" name="Actual" filename="Actual.xml"/>
     <date-display dates="true" times="true" seconds="false"/>
